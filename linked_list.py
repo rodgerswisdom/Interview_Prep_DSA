@@ -3,5 +3,13 @@ class linked_list:
         self.head = head
         
 
-        def append:
-            
+        def append(self, new_node):
+            current = self.head
+
+            if current:
+                while current.next:
+                    current = current.next
+                curent.next = new_node
+
+            else:
+                self.head = new_node
