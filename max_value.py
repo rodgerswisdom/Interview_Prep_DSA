@@ -4,9 +4,8 @@ def find_max(List):
     for item in List[1:]:
         if item > max_value:
             max_value = item
-            print(max_value)
     return max_value
     
     
 
-    find_max([3,4,9,2,1])
+print(find_max([3,4,9,2,1]))

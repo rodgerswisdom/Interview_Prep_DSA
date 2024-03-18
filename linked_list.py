@@ -1,7 +1,7 @@
 class linked_list:
-    def __init__(self, head):
+    def __init__(self, head = None):
         self.head = head
-        self.next = None
-
-    def append:
         
+
+        def append:
+            
