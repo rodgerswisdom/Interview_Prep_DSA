@@ -14,5 +14,20 @@ class linked_list:
             else:
                 self.head = new_node # if non head, then maje the head a new node.and
 
-        def delete():
-            
+        def delete(self, value):
+            """ Delete the head"""
+
+            current = self.head
+
+            if current.value == value:
+                self.head == current.next
+            else:
+                while current:
+                    if current.value == value:
+                        break
+                    prev = current
+                if current == None:
+                    return
+                prev.next = current.next
+                current = None
+
